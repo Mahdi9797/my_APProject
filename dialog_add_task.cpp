@@ -2,6 +2,7 @@
 #include "ui_dialog_add_task.h"
 #include "task.h"
 #include "data.h"
+#include "QMessageBox"
 Dialog_add_task::Dialog_add_task(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Dialog_add_task)
@@ -16,10 +17,15 @@ Dialog_add_task::~Dialog_add_task()
 
 void Dialog_add_task::on_buttonBox_accepted()
 {
+    if (ui->priority_input->text().isEmpty() || ui->name_of_task_input->text().isEmpty()) {
+        QMessageBox::warning(this, "تذکر", "همه فیلدها باید پر شوند!");
+        return;
+    }
     task u(" "," ");
     u.set_priority_for_task(ui->priority_input->text());
     u.set_name_of_task(ui->name_of_task_input->text());
     u.set_uesr_name_of_creator(Data::get_onlineId());
     Data::get_tasks().append(u);
+    return;
 }
 

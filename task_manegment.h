@@ -18,6 +18,12 @@ public:
 private slots:
     void on_ceat_task_btn_clicked();
 
+    void on_show_task_btn_clicked();
+
+    void on_create_task_btn_clicked();
+
+    void on_edit_task_btn_clicked();
+
 private:
     Ui::task_manegment *ui;
 };

@@ -5,6 +5,7 @@
 #include "data.h"
 #include "firstpage.h"
 #include "ui_firstpage.h"
+#include "user.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -30,6 +31,8 @@ void MainWindow::on_SignUpBtn_clicked()
 
 void MainWindow::on_SignInBtn_clicked()
 {
+    user d("mahdi" , "1" , "1" , "1");
+    Data::get_players().append(d);
     if (ui->usernameInput->text().isEmpty() || ui->passwordInput->text().isEmpty()) {
         QMessageBox::warning(this, "تذکر", "نام کاربری و رمز عبور نمی تواند خالی باشد!");
         return;

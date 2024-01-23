@@ -30,7 +30,7 @@
      <property name="geometry">
       <rect>
        <x>460</x>
-       <y>20</y>
+       <y>50</y>
        <width>221</width>
        <height>401</height>
       </rect>
@@ -78,42 +78,117 @@
       </property>
      </widget>
     </widget>
+    <widget class="QGroupBox" name="edit_group">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>190</y>
+       <width>211</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>edit tasks</string>
+     </property>
+     <widget class="QPushButton" name="edit_task_btn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Edit</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="show_task_you_create_group">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>50</y>
+       <width>181</width>
+       <height>401</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>show tasks you created</string>
+     </property>
+     <widget class="QPushButton" name="show_task_btn">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>360</y>
+        <width>141</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>show </string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="show_task_listwidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>31</y>
+        <width>161</width>
+        <height>311</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
     <widget class="QGroupBox" name="groupBox_2">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>40</y>
-       <width>211</width>
-       <height>371</height>
+       <y>70</y>
+       <width>201</width>
+       <height>111</height>
       </rect>
      </property>
      <property name="title">
-      <string>edit</string>
+      <string>create tasks</string>
      </property>
-     <widget class="QPushButton" name="ceat_task_btn">
+     <widget class="QPushButton" name="create_task_btn">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>40</y>
         <width>161</width>
-        <height>71</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="text">
        <string>create task</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="edit_task_btn">
+    </widget>
+    <widget class="QGroupBox" name="delete_tesk_group">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>300</y>
+       <width>211</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>delete tasks</string>
+     </property>
+     <widget class="QPushButton" name="delete_task_btn">
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>120</y>
+        <y>30</y>
         <width>161</width>
-        <height>71</height>
+        <height>41</height>
        </rect>
       </property>
       <property name="text">
-       <string>edit tasks</string>
+       <string>delete task</string>
       </property>
      </widget>
     </widget>

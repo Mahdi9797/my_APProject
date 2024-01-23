@@ -20,6 +20,10 @@ private slots:
 
     void on_task_group_clicked();
 
+    void on_teams_btn_clicked();
+
+    void on_organ_group_clicked();
+
 private:
     Ui::firstpage *ui;
 };
